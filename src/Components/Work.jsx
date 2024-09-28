@@ -3,7 +3,10 @@ import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import trophy from "./modelImage/TTc.png"
-import spiderman from "./modelImage/SpidermanSuitCollector.png"
+import spiderman from "./modelImage/SpidermanSuitCollector.png";
+import solar from "./modelImage/solarView.png";
+
+
 const Work = () => {
   const projects = [
     {
@@ -26,7 +29,7 @@ const Work = () => {
       id: 3,
       title: "Solar View website",
       description: "Me and my class was having an competition for an client for who ever made the best website for them",
-      image: "/placeholder.svg?height=150&width=250",
+      image: solar,
       tags: ["html", "css"],
       link: "#",
     },

@@ -69,9 +69,11 @@ const Banner = () => {
               className="flex gap-x-6 max-w-max mx-auto lg:mx-0"
             >
               <motion.button
-                className="btn btn-lg bg-yellow-500 hover:bg-yellow-600 text-white"
+                className="btn btn-lg bg-yellow-500 hover:bg-red-600 text-white"
                 whileHover={{ scale: 1.1, backgroundColor: "#ffdd00" }}
                 transition={{ duration: 0.3 }}
+                
+                
               >
                 Contact me
               </motion.button>

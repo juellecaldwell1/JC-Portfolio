@@ -4,12 +4,58 @@ import { useInView } from "react-intersection-observer";
 import { fadeIn } from "../variants";
 import { motion } from "framer-motion";
 import { FaHtml5, FaCss3Alt, FaJsSquare } from "react-icons/fa";
-import {Link} from "react-router-dom";
-const About = () => {
+import { Link } from "react-router-dom";
+
+const ExperienceCounter = () => {
   const [ref, inView] = useInView({ threshold: 0.5 });
+  const data = [
+    { label: "Years of Experience", count: 0 },
+    { label: "Years of JavaScript", count: 1 },
+    { label: "Months of C#", count: 6 },
+    { label: "Years of HTML & CSS", count: 1 },
+  ];
 
   return (
-    <section className="section bg-black text-white" id="about" ref={ref}>
+    <motion.div
+      ref={ref}
+      variants={fadeIn("up", 0.3)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.7 }}
+      className="flex gap-x-6 lg:gap-x-10 mb-12"
+    >
+      {data.map(({ label, count }) => (
+        <motion.div
+          key={label}
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.3 }}
+          className="text-center"
+        >
+          <div className="text-[40px] font-tertiary text-gradient">
+            {inView ? (
+              <CountUp start={0} end={count} duration={5} delay={0.5} />
+            ) : null}
+          </div>
+          <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.7 }}
+            className="font-primary text-sm tracking-[2px]"
+            whileHover={{ color: "#ff6f61" }}
+            transition={{ duration: 0.3 }}
+          >
+            {label}
+          </motion.div>
+        </motion.div>
+      ))}
+    </motion.div>
+  );
+};
+
+const About = () => {
+  return (
+    <section className="section bg-black text-white" id="about">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-12">
           <motion.div
@@ -21,8 +67,8 @@ const About = () => {
             <motion.h2
               variants={fadeIn("up", 0.3)}
               initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: "false", amount: 0.7 }}
+              whileInView="show"
+              viewport={{ once: false, amount: 0.7 }}
               className="text-red-600 mb-6 text-4xl font-bold"
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.3 }}
@@ -32,61 +78,46 @@ const About = () => {
             <motion.h3
               variants={fadeIn("up", 0.3)}
               initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: "false", amount: 0.7 }}
-              className="mb-4 text-2xl"
-              whileHover={{ scale: 1.05, color: "#ff6f61" }}
+              whileInView="show"
+              viewport={{ once: false, amount: 0.7 }}
+              className="mb-4 text-2xl font-semibold text-white bg-gradient-to-r from-red-700 to-red-700 p-6 rounded-xl shadow-2xl hover:shadow-red-500/50 transition-shadow duration-300"
+              whileHover={{
+                scale: 1.1,
+                rotate: 1,
+                textShadow: "0px 0px 10px rgba(255, 255, 255, 0.8)",
+                boxShadow: "0px 5px 15px rgba(255, 111, 97, 0.8)",
+              }}
               transition={{ duration: 0.3 }}
             >
-              Hello, myMy name is Juelle, and I’ve been learning web development for about a year. Interestingly, I initially stumbled into this field by accident when I enrolled in school for it, but I have no regrets. Web development has turned out to be fascinating, and I thoroughly enjoy building websites and applications.
-
-I plan to create websites for friends pursuing careers in music, particularly in the rap industry. Coding to anime music helps me focus and creates a peaceful environment that separates me from reality. As I continue my studies at Ranken Technical College, I hope to secure a job before graduating. I may not always sound like an expert, but my coding skills certainly speak for themselves.
+              Hello, my name is Juelle, and I’ve been learning web development
+              for about a year. Interestingly, I initially stumbled into this
+              field by accident when I enrolled in school for it, but I have no
+              regrets. Web development has turned out to be fascinating, and I
+              thoroughly enjoy building websites and applications. I plan to
+              create websites for friends pursuing careers in music,
+              particularly in the rap industry. Coding to anime music helps me
+              focus and creates a peaceful environment that separates me from
+              reality. As I continue my studies at Ranken Technical College, I
+              hope to secure a job before graduating. I may not always sound
+              like an expert, but my coding skills certainly speak for
+              themselves.
             </motion.h3>
-            <motion.div
-              variants={fadeIn("up", 0.3)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: "false", amount: 0.7 }}
-              className="flex gap-x-6 lg:gap-x-10 mb-12"
-            >
-              {[
-                { label: "Years of Experience", count: 0 },
-                { label: "Years of Javascript", count: 1 },
-                { label: "Months of C#", count: 6 },
-                { label: "Years of Html and Css", count: 1 },
-              ].map(({ label, count }) => (
-                <motion.div
-                  key={label}
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ duration: 0.3 }}
-                  className="text-center"
-                >
-                  <div className="text-[40px] font-tertiary text-gradient">
-                    {inView ? <CountUp start={0} end={count} duration={5} /> : null}
-                  </div>
-                  <motion.div
-                    variants={fadeIn("up", 0.3)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: "false", amount: 0.7 }}
-                    className="font-primary text-sm tracking-[2px]"
-                    whileHover={{ color: "#ff6f61" }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    {label}
-                  </motion.div>
-                </motion.div>
-              ))}
-            </motion.div>
+
+            <ExperienceCounter />
+
             <div className="flex gap-x-8 items-center mb-12">
               <Link to="/resume">
-              <motion.button
-                whileHover={{ scale: 1.1, backgroundColor: "#4f46e5", color: "#fff" }}
-                transition={{ duration: 0.3 }}
-                className="btn btn-lg"
-              >
-                View Resume
-              </motion.button>
+                <motion.button
+                  whileHover={{
+                    scale: 1.1,
+                    backgroundColor: "#4f46e5",
+                    color: "#fff",
+                  }}
+                  transition={{ duration: 0.3 }}
+                  className="btn btn-lg"
+                >
+                  View Resume
+                </motion.button>
               </Link>
               <motion.a
                 href="/resume"
