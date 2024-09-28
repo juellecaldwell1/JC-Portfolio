@@ -6,19 +6,19 @@ import { TbXboxX } from "react-icons/tb";
 const services = [
   {
     title: "Frontend Development",
-    description: "Creating engaging and interactive frontend experiences with modern web design techniques.",
+    description: "I specialize in creating clean and engaging frontend applications. Although frontend design isn't my strongest suit, I can still deliver functional and visually appealing websites with basic features.",
     icon: "🎨",
     color: "from-red-600 to-red-800"
   },
   {
     title: "Backend Development",
-    description: "Building robust and scalable server-side solutions with SQL and MongoDB.",
+    description: "Backend development is my area of expertise. I enjoy building the core functionality of websites and applications, making this the most enjoyable aspect of coding for me.",
     icon: "🖥️",
     color: "from-red-700 to-red-900"
   },
   {
     title: "Full Stack Development",
-    description: "Crafting comprehensive web applications with end-to-end development expertise.",
+    description: "I specialize in full stack development, particularly with the MERN stack. I excel at integrating both frontend and backend components to create seamless, functional web applications.",
     icon: "🚀",
     color: "from-red-800 to-black"
   },

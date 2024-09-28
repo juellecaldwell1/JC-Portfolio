@@ -2,31 +2,32 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-
+import trophy from "./modelImage/TTc#.png"
+import spiderman from "./modelImage/SpidermanSuitCollector.png"
 const Work = () => {
   const projects = [
     {
       id: 1,
       title: "Trophy Tracker",
       description: "C# Trophy Tracker Application that tracks the different trophies you earned through games and you can level up every 10 Trophies",
-      image: "../assets/TrophyTracker.png",
+      image: trophy,
       tags: ["C"],
       link: "#",
     },
     {
       id: 2,
-      title: "Weather App",
-      description: "Real-time weather application",
-      image: "/placeholder.svg?height=150&width=250",
-      tags: ["React", "API", "CSS3"],
+      title: "Spider-man Suit Tracker",
+      description: "This is an spider man suit tracker with CRUD operations",
+      image: spiderman,
+      tags: ["React", "CSS3"],
       link: "#",
     },
     {
       id: 3,
-      title: "Task Management",
-      description: "Kanban-style task manager",
+      title: "Solar View website",
+      description: "Me and my class was having an competition for an client for who ever made the best website for them",
       image: "/placeholder.svg?height=150&width=250",
-      tags: ["React", "Redux", "Firebase"],
+      tags: ["html", "css"],
       link: "#",
     },
     {

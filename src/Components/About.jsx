@@ -38,7 +38,9 @@ const About = () => {
               whileHover={{ scale: 1.05, color: "#ff6f61" }}
               transition={{ duration: 0.3 }}
             >
-              Hello, my name is Juelle, and I've been learning web development for about 1 year now.
+              Hello, myMy name is Juelle, and I’ve been learning web development for about a year. Interestingly, I initially stumbled into this field by accident when I enrolled in school for it, but I have no regrets. Web development has turned out to be fascinating, and I thoroughly enjoy building websites and applications.
+
+I plan to create websites for friends pursuing careers in music, particularly in the rap industry. Coding to anime music helps me focus and creates a peaceful environment that separates me from reality. As I continue my studies at Ranken Technical College, I hope to secure a job before graduating. I may not always sound like an expert, but my coding skills certainly speak for themselves.
             </motion.h3>
             <motion.div
               variants={fadeIn("up", 0.3)}
