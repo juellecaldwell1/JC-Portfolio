@@ -2,7 +2,7 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import trophy from "./modelImage/TTc#.png"
+import trophy from "./modelImage/TTc.png"
 import spiderman from "./modelImage/SpidermanSuitCollector.png"
 const Work = () => {
   const projects = [
