@@ -22,7 +22,7 @@ const Work = () => {
       title: "Spider-man Suit Tracker",
       description: "This is an spider man suit tracker with CRUD operations",
       image: spiderman,
-      tags: ["React", "CSS3"],
+      tags: ["React", "CSS"],
       link: "#",
     },
     {
@@ -30,7 +30,7 @@ const Work = () => {
       title: "Solar View website",
       description: "Me and my class was having an competition for an client for who ever made the best website for them",
       image: solar,
-      tags: ["html", "css"],
+      tags: ["HTML", "CSS"],
       link: "#",
     },
     {
