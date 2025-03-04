@@ -9,20 +9,20 @@ const Resume = () => {
 
   const sections = [
     {
-      title: "Summary",
+      title: "Summary1",
       content: `A passionate web developer with a focus on creating responsive and user-friendly applications. 
       Skilled in JavaScript, React, and back-end development.Really excited to learn, collaborate, and contribute to lots of projects. 
       Currently pursuing an Associate's Degree in Web Development at Ranken Technical College, expected to graduate in 2025.`,
     },
     {
-      title: "Skills",
+      title: "Skills1",
       content: `**Languages**: JavaScript, HTML, CSS, C#, SQL
       **Frameworks**: React, Node.js, Express
       **Databases**: MongoDB, SQL
       **Tools**: Git, GitHub, Postman, Visual Studio, Bootstrap, Axios`,
     },
     {
-      title: "Education",
+      title: "Education1",
       content: `Ranken Technical College (Associate's Degree in Web Development, expected 2024)
       Relevant Coursework: Full-Stack Development, Databases, Object-Oriented Programming`,
     },
