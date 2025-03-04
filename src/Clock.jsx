@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 const Clock = () => {
-  const startDate = new Date('2024-08-20');
+  const startDate = new Date('2023-08-20');
   const [time, setTime] = useState(new Date());
 
   const calculateTimeAsDeveloper = () => {
