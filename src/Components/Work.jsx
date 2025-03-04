@@ -5,7 +5,7 @@ import { fadeIn } from "../variants";
 import trophy from "./modelImage/TTc.png"
 import spiderman from "./modelImage/SpidermanSuitCollector.png";
 import solar from "./modelImage/solarView.png";
-import IssueTracker from "./modelImage/IssueTracker.png"
+// import IssueTracker from "./modelImage/IssueTracker.png"
 
 
 const Work = () => {
@@ -22,11 +22,10 @@ const Work = () => {
       id: 2,
       title: "Issue Tracker Application",
       description: "This is an issue Tracker used to track peoples issues",
-      image: IssueTracker,
+      image: "IssueTracker",
       tags: ["React", "Tailwind Css", "Node js", "Express", "MongoDB"],
       link: "https://www.youtube.com/watch?v=Ohoq-viTuzw",
-    }
-    ,
+    },
     {
       id: 3,
       title: "Solar View website",
