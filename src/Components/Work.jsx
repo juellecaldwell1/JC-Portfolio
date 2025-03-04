@@ -6,6 +6,7 @@ import trophy from "./modelImage/TTc.png"
 import spiderman from "./modelImage/SpidermanSuitCollector.png";
 import solar from "./modelImage/solarView.png";
 // import IssueTracker from "./modelImage/IssueTracker.png"
+import tracker from "../assets/IssueTracker.png"
 
 
 const Work = () => {
@@ -22,7 +23,7 @@ const Work = () => {
       id: 2,
       title: "Issue Tracker Application",
       description: "This is an issue Tracker used to track peoples issues",
-      image: "IssueTracker",
+      image: tracker,
       tags: ["React", "Tailwind Css", "Node js", "Express", "MongoDB"],
       link: "https://www.youtube.com/watch?v=Ohoq-viTuzw",
     },
