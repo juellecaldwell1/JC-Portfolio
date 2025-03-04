@@ -5,7 +5,6 @@ import { fadeIn } from "../variants";
 import trophy from "./modelImage/TTc.png"
 import spiderman from "./modelImage/SpidermanSuitCollector.png";
 import solar from "./modelImage/solarView.png";
-// import IssueTracker from "./modelImage/IssueTracker.png"
 import tracker from "../assets/IssueTracker.png"
 
 
@@ -67,7 +66,7 @@ const Work = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: "false", amount: 0.7 }}
-                className="w-full sm:w-[45%] md:w-[300px] bg-black rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl relative"
+                className="w-full sm:w-[45%] md:w-[23%] bg-black rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl relative"
               >
                 <motion.img
                   src={project.image}
