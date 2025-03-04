@@ -9,35 +9,50 @@ const Resume = () => {
 
   const sections = [
     {
-      title: "Summary1",
-      content: `A passionate web developer with a focus on creating responsive and user-friendly applications. 
-      Skilled in JavaScript, React, and back-end development.Really excited to learn, collaborate, and contribute to lots of projects. 
-      Currently pursuing an Associate's Degree in Web Development at Ranken Technical College, expected to graduate in 2025.`,
+      title: "Summary",
+      content: `Passionate web developer with experience in React, C#, and ASP.NET MVC. 
+      Currently pursuing an Associate’s Degree in Web Development at Ranken Technical College (expected 2025). 
+      Skilled in building user-friendly applications, problem-solving, and leveraging AI-powered tools. 
+      Seeking hands-on opportunities to further develop my skills and contribute to a development team.`,
     },
     {
-      title: "Skills1",
-      content: `**Languages**: JavaScript, HTML, CSS, C#, SQL
-      **Frameworks**: React, Node.js, Express
-      **Databases**: MongoDB, SQL
-      **Tools**: Git, GitHub, Postman, Visual Studio, Bootstrap, Axios`,
+      title: "Technical Skills",
+      content: `**Languages**:
+      - JavaScript (Fetch API, Async/Await, Axios)
+      - HTML (Forms, Accessibility)
+      - CSS (Flexbox, Tailwind CSS, Bootstrap)
+      - C# (LINQ, Entity Framework, ASP.NET MVC)
+      - SQL (Joins, Queries)
+
+      **Frameworks & Libraries**:
+      - React (Hooks, Framer Motion, State Management, UseState, UseEffect)
+      - Node.js (Express, REST APIs)
+      - ASP.NET MVC (Razor, Controllers, Views)
+
+      **Databases**:
+      - MongoDB (Mongoose, Aggregations)
+      - SQL Server (Performing Queries, Join Tables)
+
+      **Tools & Technologies**:
+      - Git, GitHub, Postman, Visual Studio, ChatGPT, NPM, REST APIs`,
     },
     {
-      title: "Education1",
-      content: `Ranken Technical College (Associate's Degree in Web Development, expected 2024)
+      title: "Education",
+      content: `Ranken Technical College – Associate’s Degree in Web Development (Expected 2025)
       Relevant Coursework: Full-Stack Development, Databases, Object-Oriented Programming`,
     },
     {
-      title: "Experience",
-      content: `Currently seeking hands-on experience and mentorship from industry experts to further develop my skills. 
-      In the meantime, I have worked on several personal projects, including:
-      - **Portfolio Website**: Built with React, deployed on Vercel. [GitHub](#)
-      - **Note-Taking App**: MERN stack with user authentication. [GitHub](#)
-      - **Game Tracker App**: C# application for tracking game trophies (beginner friendly application)`,
+      title: "Projects",
+      content: `- **Portfolio Website** – Built with React, deployed on Vercel.
+      - **Note-Taking App** – Full-stack MERN app with user authentication & CRUD operations.
+      - **Game Tracker App** – C# desktop app for tracking game trophies.
+      - **Issue Tracker App** – MERN stack app with user authentication & CRUD operations.
+      - **Inventory Manager Website** – ASP.NET MVC project for managing product inventory.`,
     },
     {
       title: "Certifications & Achievements",
-      content: `- JavaScript Algorithms and Data Structures (FreeCodeCamp)
-      `,
+      content: `- JavaScript Algorithms & Data Structures – FreeCodeCamp
+      - Portfolio Website: [juelles-portfolio.vercel.app](https://juelles-portfolio.vercel.app)`,
     },
   ];
 
@@ -50,18 +65,10 @@ const Resume = () => {
         className="min-h-screen bg-white text-gray-800 p-4 sm:p-8"
       >
         <header className="mb-8">
-          <h1 className="text-4xl font-bold text-red-600 mb-2">
-            Juelle Caldwell
-          </h1>
-          <p className="text-xl text-gray-600">Beginner Web Developer</p>
+          <h1 className="text-4xl font-bold text-red-600 mb-2">Juelle Caldwell</h1>
+          <p className="text-xl text-gray-600">Developer</p>
           <p className="text-md text-gray-500">
-            Email: Juellecc@gmail.com| Phone: (314) 986-9400 |{" "}
-            <a
-              className="text-blue-500"
-              href="https://github.com/juellecaldwell1/JC-Portfolio"
-            >
-              GitHub
-            </a>
+            📧 Juellecc@gmail.com | 📞 (314) 986-9400 | 📍 St. Louis, MO (63116)
           </p>
         </header>
 
@@ -82,9 +89,7 @@ const Resume = () => {
             <h2 className="text-2xl font-semibold text-red-600 mb-2">
               {section.title}
             </h2>
-            <div className="text-gray-700 whitespace-pre-line">
-              {section.content}
-            </div>
+            <div className="text-gray-700 whitespace-pre-line">{section.content}</div>
           </motion.section>
         ))}
         <div className="flex gap-x-8 items-center mb-12">

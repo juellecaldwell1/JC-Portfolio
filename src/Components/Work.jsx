@@ -5,6 +5,7 @@ import { fadeIn } from "../variants";
 import trophy from "./modelImage/TTc.png"
 import spiderman from "./modelImage/SpidermanSuitCollector.png";
 import solar from "./modelImage/solarView.png";
+import IssueTracker from "./modelImage/IssueTracker.png"
 
 
 const Work = () => {
@@ -15,16 +16,17 @@ const Work = () => {
       description: "C# Trophy Tracker Application that tracks the different trophies you earned through games and you can level up every 10 Trophies",
       image: trophy,
       tags: ["C"],
-      link: "#",
+      link: "https://www.youtube.com/watch?v=fs6zpC5-YCA",
     },
     {
       id: 2,
-      title: "Spider-man Suit Tracker",
-      description: "This is an spider man suit tracker with CRUD operations",
-      image: spiderman,
-      tags: ["React", "CSS"],
-      link: "#",
-    },
+      title: "Issue Tracker Application",
+      description: "This is an issue Tracker used to track peoples issues",
+      image: IssueTracker,
+      tags: ["React", "Tailwind Css", "Node js", "Express", "MongoDB"],
+      link: "https://www.youtube.com/watch?v=Ohoq-viTuzw",
+    }
+    ,
     {
       id: 3,
       title: "Solar View website",
@@ -35,10 +37,10 @@ const Work = () => {
     },
     {
       id: 4,
-      title: "Portfolio Website",
-      description: "Responsive portfolio showcase",
-      image: "/placeholder.svg?height=150&width=250",
-      tags: ["React", "Tailwind", "Netlify"],
+      title: "Spider-man Suit Tracker",
+      description: "This is an spider man suit tracker with CRUD operations",
+      image: spiderman,
+      tags: ["React", "CSS"],
       link: "#",
     },
   ];
