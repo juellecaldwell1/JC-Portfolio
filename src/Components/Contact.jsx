@@ -18,7 +18,6 @@ export default function FlashyContactForm() {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-
   emailjs.init("w1NzKLHH-gmR3tfxV");
 
   const sendEmail = async (e) => {
@@ -74,7 +73,7 @@ export default function FlashyContactForm() {
   };
 
   return (
-    <div className="contact" id="contact">
+    <div className="contact pb-24" id="contact">
       <motion.div
         className="flex flex-col md:flex-row bg-black text-white p-8 rounded-lg shadow-xl max-w-6xl mx-auto overflow-hidden"
         variants={containerVariants}

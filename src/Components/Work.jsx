@@ -15,7 +15,7 @@ const Work = () => {
       title: "Trophy Tracker",
       description: "C# Trophy Tracker Application that tracks the different trophies you earned through games and you can level up every 10 Trophies",
       image: trophy,
-      tags: ["C"],
+      tags: ["C#, SQL"],
       link: "https://www.youtube.com/watch?v=fs6zpC5-YCA",
     },
     {
@@ -39,7 +39,7 @@ const Work = () => {
       title: "Spider-man Suit Tracker",
       description: "This is an spider man suit tracker with CRUD operations",
       image: spiderman,
-      tags: ["React", "CSS"],
+      tags: ["React", "CSS",],
       link: "#",
     },
   ];
